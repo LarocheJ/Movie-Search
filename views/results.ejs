@@ -1,21 +1,25 @@
 <%- include("partials/header"); %>
 
-<h1>“<%= query %>”</h1>
+<div class="wrapper m-scene" id="main">
 
-<a class="btn-lg top-left" href="/">&#8592; Make another search</a>
+    <div class="scene_element scene_element--fadein">
 
-<div class="wrapper">
+        <h1>“<%= query %>”</h1>
 
-    <div class="grid">
+        <a class="btn-lg top-left" href="/">&#8592; Make another search</a>
 
-        <% data["Search"].forEach((movie) => { %>
+        <div class="grid">
 
-        <div>
-            <a href="https://www.imdb.com/title/<%= movie["imdbID"] %>" target="_blank"> <img
-                    src="<%= movie["Poster"] %>" alt="<%= movie["Title"] %> poster"></a>
+            <% data["Search"].forEach((movie) => { %>
+
+            <div>
+                <a href="https://www.imdb.com/title/<%= movie["imdbID"] %>" target="_blank"> <img
+                        src="<%= movie["Poster"] %>" alt="<%= movie["Title"] %> poster"></a>
+            </div>
+
+            <% }); %>
+
         </div>
-
-        <% }); %>
 
     </div>
 

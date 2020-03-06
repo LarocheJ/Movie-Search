@@ -92,10 +92,6 @@ p {
             transform: scale(1.05);
         }
     }
-
-
-
-
 }
 
 .search-container {
@@ -143,5 +139,32 @@ footer {
         text-align: center;
         font-size: 12px;
         color: $tertiary;
+    }
+}
+
+// ANIMATIONS - tutorial from https://css-tricks.com/add-page-transitions-css-smoothstate-js/ (did not use the smoothstate library)
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.m-scene {
+
+    /** Basic styles for an animated element */
+    .scene_element {
+        animation-duration: 0.25s;
+        transition-timing-function: ease-in;
+        animation-fill-mode: both;
+
+    }
+
+    /** An element that fades in */
+    .scene_element--fadein {
+        animation-name: fadeIn;
     }
 }

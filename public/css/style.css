@@ -143,4 +143,41 @@ footer p {
   font-size: 12px;
   color: #add8e6;
 }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.m-scene {
+  /** Basic styles for an animated element */
+  /** An element that fades in */
+}
+
+.m-scene .scene_element {
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.m-scene .scene_element--fadein {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
 /*# sourceMappingURL=style.css.map */

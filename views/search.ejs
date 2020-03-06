@@ -1,17 +1,18 @@
 <%- include("partials/header"); %>
 
-<h1>Look for a Movie</h1>
+<div class="wrapper m-scene" id="main">
 
-<p>Look for your favorite movie!</p>
+    <div class="scene_element scene_element--fadein">
 
-<div class="wrapper">
+        <h1 class="scene_element--fadein">Look for a Movie</h1>
+        <form action="/results" method="get">
+            <div class="search-container">
+                <input class="search" type="text" name="search" placeholder="Search..." required>
+                <button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </form>
 
-    <form action="/results" method="get">
-        <div class="search-container">
-            <input class="search" type="text" name="search" placeholder="Search..." required>
-            <button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
-        </div>
-    </form>
+    </div>
 
 </div>
 
