@@ -3,6 +3,7 @@ const app = express();
 const request = require("request");
 const bodyParser = require("body-parser");
 const path = require("path");
+const PORT = process.env.PORT || 5000;
 
 app.use(express.static(__dirname + "/public"));
 app.set("views", path.join(__dirname, "views"));
@@ -34,6 +35,4 @@ app.get("/results", (req, res) => {
   });
 });
 
-app.listen(5000, () => {
-  console.log("Server started on port 5000");
-});
+app.listen(PORT, () => console.log(`Listening on ${PORT}`));
