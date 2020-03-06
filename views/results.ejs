@@ -6,6 +6,8 @@
 
         <h1>“<%= query %>”</h1>
 
+        <p>Click on a poster for more information!</p>
+
         <a class="btn-lg top-left" href="/">&#8592; Make another search</a>
 
         <div class="grid">
@@ -14,7 +16,7 @@
 
             <div>
                 <a href="https://www.imdb.com/title/<%= movie["imdbID"] %>" target="_blank"> <img
-                        src="<%= movie["Poster"] %>" alt="<%= movie["Title"] %> poster"></a>
+                        src="<%= movie["Poster"] %>" alt="<%= movie["Title"] %> poster" title="<%= movie["Title"] %>"></a>
             </div>
 
             <% }); %>

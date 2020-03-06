@@ -48,8 +48,8 @@ p {
   text-decoration: none;
   color: #e6e6fa;
   border-radius: 3rem;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 .btn-lg:hover {
@@ -72,12 +72,12 @@ p {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 3rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 
 .grid div {
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 .grid div img {
@@ -111,10 +111,10 @@ p {
   outline: none;
   padding: 0.5rem;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #e6e6fa;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 .search:focus {
