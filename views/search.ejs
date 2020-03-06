@@ -1,0 +1,18 @@
+<%- include("partials/header"); %>
+
+<h1>Look for a Movie</h1>
+
+<p>Look for your favorite movie!</p>
+
+<div class="wrapper">
+
+    <form action="/results" method="get">
+        <div class="search-container">
+            <input class="search" type="text" name="search" placeholder="Search..." required>
+            <button class="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+    </form>
+
+</div>
+
+<%- include("partials/footer"); %>

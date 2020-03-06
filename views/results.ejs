@@ -1,0 +1,24 @@
+<%- include("partials/header"); %>
+
+<h1>“<%= query %>”</h1>
+
+<a class="btn-lg top-left" href="/">&#8592; Make another search</a>
+
+<div class="wrapper">
+
+    <div class="grid">
+
+        <% data["Search"].forEach((movie) => { %>
+
+        <div>
+            <a href="https://www.imdb.com/title/<%= movie["imdbID"] %>" target="_blank"> <img
+                    src="<%= movie["Poster"] %>" alt="<%= movie["Title"] %> poster"></a>
+        </div>
+
+        <% }); %>
+
+    </div>
+
+</div>
+
+<%- include("partials/footer"); %>
