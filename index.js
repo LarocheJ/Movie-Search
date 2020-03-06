@@ -2,10 +2,10 @@ const express = require("express");
 const app = express();
 const request = require("request");
 const bodyParser = require("body-parser");
+const path = require("path");
 
-app
-  .use(express.static(__dirname + "/public"))
-  .set("views", path.join(__dirname, "views"));
+app.use(express.static(__dirname + "/public"));
+app.set("views", path.join(__dirname, "views"));
 
 app.use(
   bodyParser.urlencoded({
